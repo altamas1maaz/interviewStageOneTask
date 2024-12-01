@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="line"></span>
+      <h1>YAY! It's BOGO</h1>
+      <span class="line"></span>
+    </div>
+ <div class="offer">
+      <label>
+        
+        <div class="offer-box">
+         
+         <div class="right" > 
+         <input type="radio" name="units" value="1" onclick="updatePrice(1)" checked>
+           <p style="display: inline-block;  "> <strong>1 Unit</strong> <span class="discount">10% Off</span></p>
+          <p style="margin: 0;">Standard Price</p></div>
+          <div class="left">
+            <p class="current-price"><strong> $10.00 USD</strong></p>
+            <p class="original-price">$24.00 USD</p></div>
+          
+        </div>
+      </label>
+
+      <label>
+       
+        <div class="offer-box most-popular">
+            <span class="most-popular1">Most-popular</span>
+          <div class="right">
+            <input type="radio" name="units" value="2" onclick="updatePrice(2)">
+            <p style="display: inline-block;"><strong>2 Units</strong> <span class="discount">20% Off</span></p>
+            <p>Size <span style="margin-left: 35px;">Color</span></p>
+           
+            <div class="options">
+              <div class="row">
+                
+                <span>#1</span>
+                <div class="dropdowns">
+                 
+                  <select>
+                    <option>Size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                  <select>
+                    <option>Colour</option>
+                    <option>Black</option>
+                    <option>White</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <span>#2</span>
+                <div class="dropdowns">
+                  <select>
+                    <option>Size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                  <select>
+                    <option>Colour</option>
+                    <option>Black</option>
+                    <option>White</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="left">
+           
+            <p class="price"><strong>$18.00 USD</strong></p>
+            <p class="original-price">$24.00 USD</p>
+          </div>
+          
+         </div>
+         </div>
+      </label>
+
+      <label>
+        
+        <div class="offer-box">
+          <div class="right">
+            <input type="radio" name="units" value="3" onclick="updatePrice(3)">
+            <p style="display: inline-block;"><strong>3 Units</strong> <span class="discount">30% Off</span></p>
+          </div>
+          <div class="left"> 
+            <p class="price">$24.00 USD</p>
+            <p class="original-price">$24.00 USD</p></div>
+            
+       </div>
+      </label>
+      <div class="total" style="display: flex; justify-content: space-between;">
+        <div class="right">
+          <p style="color: #ff6b82;">Free Delivery</p>
+        </div>
+      
+        <div class="left">
+          <p><strong>Total: <span id="total-price">$10.00 USD</span></strong></p>
+        </div>
+       
+      </div>
+      <button class="add-to-cart">+ Add to Cart</button>
+    </div>
+    </div>
+   
+  <script src="script.js"></script>
+</body>
+</html>
